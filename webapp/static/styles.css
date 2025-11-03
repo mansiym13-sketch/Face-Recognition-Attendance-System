@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root{
+  --bg:#0f172a; /* slate-900 */
+  --card:#111827; /* gray-900 */
+  --text:#e5e7eb; /* gray-200 */
+  --muted:#9ca3af; /* gray-400 */
+  --accent:#22d3ee; /* cyan-400 */
+  --accent2:#a78bfa; /* violet-400 */
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text); font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial; font-size:16px;
+}
+.nav{
+  display:flex; align-items:center; justify-content:space-between; padding:14px 20px; background:linear-gradient(90deg, rgba(17,24,39,1) 0%, rgba(17,24,39,0.6) 100%);
+  border-bottom:1px solid #1f2937;
+}
+.nav .brand{ font-weight:800; font-size:20px; color:var(--accent); }
+.nav .links a{ color:var(--text); text-decoration:none; margin-left:16px; font-weight:600; opacity:.9 }
+.nav .links a:hover{ color:var(--accent2) }
+
+.container{ max-width:960px; margin:40px auto; padding:0 20px }
+.hero{ text-align:center; padding:40px; background:radial-gradient(1000px 600px at 50% -10%, rgba(34,211,238,.15), transparent), radial-gradient(800px 500px at 100% 10%, rgba(167,139,250,.15), transparent); border:1px solid #1f2937; border-radius:16px }
+.hero h1{ font-size:42px; margin:0 0 12px; color:#ffffff }
+.hero p{ color:var(--muted); font-size:18px }
+.actions{ margin-top:20px }
+.btn{ display:inline-block; background:linear-gradient(90deg, var(--accent), var(--accent2)); color:#0b1020; padding:10px 16px; border-radius:10px; font-weight:800; text-decoration:none; margin:6px 8px }
+.btn:hover{ opacity:.9 }
+
+.form{ display:grid; gap:14px; background:var(--card); padding:20px; border-radius:12px; border:1px solid #1f2937; max-width:520px }
+.form label{ display:grid; gap:6px; font-weight:600; color:#cbd5e1 }
+.form input{ padding:10px 12px; border-radius:8px; border:1px solid #334155; background:#0b1222; color:#e5e7eb; font-size:16px }
+.form button{ justify-self:start }
+
+.card{ background:var(--card); padding:16px; border-radius:12px; border:1px solid #1f2937; margin-top:16px }
+.hint{ color:var(--muted); margin-top:8px }
+
+.flash-container{ margin:16px 0 }
+.flash{ padding:10px 12px; border-radius:10px; margin-bottom:10px; font-weight:600 }
+.flash.success{ background:rgba(34,197,94,.15); color:#86efac; border:1px solid #166534 }
+.flash.error{ background:rgba(239,68,68,.15); color:#fecaca; border:1px solid #7f1d1d }

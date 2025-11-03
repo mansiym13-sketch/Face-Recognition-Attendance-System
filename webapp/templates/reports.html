@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Attendance Reports</h2>
+  <form method="post" class="form">
+    <label>Subject
+      <input name="subject" type="text" required value="{{ subject or '' }}" />
+    </label>
+    <button class="btn" type="submit">Generate Summary</button>
+  </form>
+  {% if summary %}
+    <div class="card">
+      <p>Summary CSV generated: <code>{{ summary }}</code></p>
+      <a class="btn" href="{{ url_for('download', path=summary) }}">Download</a>
+    </div>
+  {% endif %}
+{% endblock %}

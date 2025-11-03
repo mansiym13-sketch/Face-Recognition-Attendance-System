@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="hero">
+    <h1>Welcome to the Class</h1>
+    <p>Register faces, train the model, and capture attendance through your browser.</p>
+    <div class="actions">
+      <a class="btn" href="{{ url_for('enroll') }}">Enroll Student</a>
+      <a class="btn" href="{{ url_for('train') }}">Train Model</a>
+      <a class="btn" href="{{ url_for('attendance') }}">Take Attendance</a>
+      <a class="btn" href="{{ url_for('reports') }}">View Reports</a>
+    </div>
+  </section>
+{% endblock %}

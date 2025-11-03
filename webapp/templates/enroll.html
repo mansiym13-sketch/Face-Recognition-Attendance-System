@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Enroll a new student</h2>
+  <form method="post" class="form">
+    <label>Enrollment (numeric)
+      <input name="enrollment" type="text" required />
+    </label>
+    <label>Name
+      <input name="name" type="text" required />
+    </label>
+    <button class="btn" type="submit">Capture Images</button>
+  </form>
+  <p class="hint">Keep your face in frame. The camera will capture up to 50 images. Press q to stop early.</p>
+{% endblock %}

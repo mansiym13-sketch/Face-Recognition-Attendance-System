@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Take Attendance</h2>
+  <form method="post" class="form">
+    <label>Subject
+      <input name="subject" type="text" required />
+    </label>
+    <label>Duration (seconds)
+      <input name="duration" type="number" min="5" value="20" />
+    </label>
+    <button class="btn" type="submit">Start</button>
+  </form>
+  <p class="hint">A camera window will open. Press ESC to end early.</p>
+{% endblock %}
